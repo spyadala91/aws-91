@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-VALIDATE{}{
+VALIDATE{}
 if [ $1 -ne 0 ]
 then
    echo "$2 ..failure"
@@ -10,7 +10,7 @@ then
    else
    echo "$2..sucess"
  fi   
-}
+
  
 if [ $USERID -ne 0 ]
 then
