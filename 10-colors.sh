@@ -8,10 +8,10 @@ VALIDATE(){
     Y="\e[33m"
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 ..$R failure"
+        echo -e "$2 .. $R failure"
         exit 1
     else
-        echo -e "$2..$G sucess"
+        echo -e "$2.. $G sucess"
     fi 
   
 }
@@ -22,10 +22,10 @@ then
    exit 1 #other than 0
 fi
 
-dnf list installed mysql
+dnf list installed Mysql
 if [ $? -ne 0 ]
 then 
-dnf install mysql -y
+dnf install Mysql -y
 VALIDATE $? "installing Mysql"
 
 else
