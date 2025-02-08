@@ -3,9 +3,9 @@
 USERID=$(id -u)
 
 VALIDATE(){
-    R=\e[31m
-    G=\e[32m
-    Y=\e[33m
+    R="\e[31m"
+    G="\e[32m"
+    Y="\e[33m"
     if [ $1 -ne 0 ]
     then
         echo -e "$2 ..$R failure"
