@@ -29,14 +29,14 @@ then
    exit 1 #other than 0
 fi
 
-dnf list installed Mysql
+dnf list installed mysql
 if [ $? -ne 0 ]
 then 
-dnf install Mysql -y
-VALIDATE $? "installing Mysql"
+dnf install mysql -y
+VALIDATE $? "installing mysql"
 
 else
-   echo -e "Mysql is already.. $Y installed"
+   echo -e "mysql is already.. $Y installed"
 fi       
 
 dnf list installed git
